@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:id="@+id/keyboardRootView">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.example.controlii.MyEditText
+            android:id="@+id/editUrl"
+            android:layout_width="0dp"
+            android:imeOptions="flagNoFullscreen|actionSearch"
+            android:inputType="textAutoComplete"
+            android:layout_height="50dp"
+            android:hint="Enter a webserver"
+            android:textColorHint="@color/text_hint"
+            android:background="@drawable/bg_vision_dialog"
+            android:paddingHorizontal="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_color"
+            android:layout_weight="1"
+            tools:ignore="TextFields"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textColorHighlight="@color/container" />
+
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/button_clear"
+            android:background="@drawable/bg_vision_dismiss"
+            app:tint="@color/text_color" />
+
+    </LinearLayout>
+
+</RelativeLayout>

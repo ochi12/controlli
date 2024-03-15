@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@drawable/bluetooth_alert_container"
+    android:clipChildren="true"
+    android:clipToOutline="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:clipChildren="false"
+        android:clipToOutline="true"
+        android:clipToPadding="false">
+
+        <ImageButton
+            android:id="@+id/dismissDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/transparent"
+            android:paddingTop="15dp"
+            android:src="@drawable/button_back"
+            app:tint="@color/text_color" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/bluetoothTitleHolder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_bluetooth_title_holder"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bluetooth"
+            android:textColor="@color/text_color"
+            android:textSize="27dp"
+            android:includeFontPadding="false"/>
+
+        <ImageButton
+            android:id="@+id/bluetoothSettings"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/circle"
+            android:paddingBottom="2dp"
+            android:rotation="90"
+            android:src="@drawable/button_arrow_up"
+            app:tint="@color/text_color" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/text_color"
+        tools:listitem="@layout/device_fragment"
+        />
+</LinearLayout>

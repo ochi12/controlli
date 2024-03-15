@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_primary">#4A7345</color>
+    <color name="back_ground">#262E25</color>
+    <color name="container">#43503F</color>
+    <color name="statusbar">#565C55</color>
+    <color name="text_color">#F3FFF1</color>
+    <color name="text_hint">#77F3FFF1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="on_container">@color/back_ground</color>
+    <color name="fa_il">#F15D5D</color>
+    <color name="thumb_on">#F1F8F0</color>
+    <color name="thumb_off">#B9BFB8</color>
+    <color name="track_off">#43503F</color>
+    <color name="track_line">#53634D</color>
+    <color name="button_text">@color/text_color</color>
+    <color name="icon_bg">#CADDC6</color>
+
+    <color name="splash_before">#364235</color>
+
+    <color name="ripple">@color/color_primary</color>
+
+    <color name="color_on_primary">#F1F8F0</color>
+
+
+
+    <color name="snackbar">#F1F8F0</color> 
+    <color name="snackbar_text">#404E3E</color>
+
+
+    <color name="progressColor">#323C30</color>
+</resources>

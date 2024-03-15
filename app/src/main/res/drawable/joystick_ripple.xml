@@ -1,0 +1,64 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="200dp"
+            android:height="200dp"
+            android:viewportWidth="200"
+            android:viewportHeight="200">
+            <group
+                android:name="group"
+                android:pivotX="100"
+                android:pivotY="100">
+                <path
+                    android:name="firstpulse"
+                    android:pathData="M 100 25 C 80.116 25 61.027 32.907 46.967 46.967 C 32.907 61.027 25 80.116 25 100 C 25 119.884 32.907 138.973 46.967 153.033 C 61.027 167.093 80.116 175 100 175 C 119.884 175 138.973 167.093 153.033 153.033 C 167.093 138.973 175 119.884 175 100 C 175 80.116 167.093 61.027 153.033 46.967 C 138.973 32.907 119.884 25 100 25 Z"
+                    android:fillColor="@color/container"/>
+            </group>
+            <path
+                android:name="maincircle"
+                android:pathData="M 100 25 C 80.116 25 61.027 32.907 46.967 46.967 C 32.907 61.027 25 80.116 25 100 C 25 119.884 32.907 138.973 46.967 153.033 C 61.027 167.093 80.116 175 100 175 C 119.884 175 138.973 167.093 153.033 153.033 C 167.093 138.973 175 119.884 175 100 C 175 80.116 167.093 61.027 153.033 46.967 C 138.973 32.907 119.884 25 100 25 Z"
+                android:fillColor="@color/container"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="group">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="scaleX"
+                    android:duration="1000"
+                    android:valueFrom="1"
+                    android:valueTo="1.3"
+                    android:valueType="floatType"
+                    android:repeatCount = "infinite"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="scaleY"
+                    android:duration="1000"
+                    android:valueFrom="1"
+                    android:valueTo="1.3"
+                    android:valueType="floatType"
+                    android:repeatCount = "infinite"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="firstpulse">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:repeatCount = "infinite"
+                    android:repeatMode = "restart"
+                    android:propertyName="fillAlpha"
+                    android:duration="1000"
+                    android:valueFrom="0.95"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+
+        </aapt:attr>
+    </target>
+</animated-vector>

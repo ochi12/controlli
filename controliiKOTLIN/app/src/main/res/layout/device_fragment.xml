@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="0dp"
+    android:id="@+id/device_fragment"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bluetooth_alert_container"
+        android:paddingVertical="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/device_computer"
+            android:layout_marginStart="25dp"
+            android:id="@+id/classificationIcon"
+            app:tint = "@color/text_color"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NULL"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingStart="15dp"
+                android:textSize="16.5sp"
+                android:textColor="@color/text_color"/>
+
+            <TextView
+                android:id="@+id/deviceConnected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connecting..."
+                android:paddingStart="15dp"
+                android:visibility="visible"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            app:tint = "@color/text_color"
+            android:id="@+id/iconConnect"
+            android:visibility="visible"
+
+            android:src="@drawable/button_clear"/>
+
+
+    </LinearLayout>
+</LinearLayout>

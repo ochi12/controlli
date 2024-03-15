@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id= "@+id/defaultState">
+        <shape android:shape="rectangle">
+            <size
+                android:width="50dp"
+                android:height="50dp"/>
+            <solid android:color="@color/text_color"/>
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+
+    <item android:id= "@+id/pressed_state">
+        <shape android:shape="rectangle">
+            <size
+                android:width="40dp"
+                android:height="40dp"
+                />
+            <solid android:color="@color/color_primary"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <transition
+        android:fromId="@id/defaultState"
+        android:toId="@id/pressed_state">
+        <animation-list>
+            <item
+                android:drawable="@drawable/pad_arrow_left"
+                android:duration="20"
+                android:scaleX = "0.98"
+                android:scaleY = "0.98"/>
+        </animation-list>
+    </transition>
+
+</animated-selector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.Controlii" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/back_ground</item>
+        <item name="android:colorBackground">@color/back_ground</item>
+        <item name="android:statusBarColor">@color/container</item>
+        <item name="android:windowLightStatusBar">@color/text_color</item>
+        <item name="android:navigationBarColor">@color/back_ground</item>
+    </style>
+</resources>

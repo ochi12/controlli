@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/back_ground"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="10dp">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/notif_keep"
+        android:layout_weight="0.5"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/status_background"
+        android:backgroundTint="@color/color_primary"
+        android:textColor="@color/color_on_primary"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="@string/notif_disconnect"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/status_background"
+        android:backgroundTint="@color/color_primary"
+        android:textColor="@color/color_on_primary"/>
+</LinearLayout>

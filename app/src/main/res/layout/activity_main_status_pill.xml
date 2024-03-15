@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="26dp"
+    android:minWidth="26dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@drawable/status_background"
+    android:animateLayoutChanges="true"
+    android:id="@+id/statusButton"
+    >
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:paddingTop="1dp"
+        android:src="@drawable/button_arrow_down"
+        android:rotation="90"
+        app:tint="@color/container" android:id="@+id/statusArrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INACTIVE"
+        android:layout_marginEnd="12dp"
+        android:textColor="@color/container"
+        android:includeFontPadding="false"
+        android:visibility="gone"
+        android:id="@+id/statusText"/>
+
+
+
+</LinearLayout>

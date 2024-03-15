@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="300dp"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_marginEnd="100dp"
+    android:orientation="horizontal"
+    android:clipChildren="false"
+    android:clipToOutline="false"
+    android:clipToPadding="false"
+    android:id="@+id/holder">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/slider_progress_container"
+        android:paddingTop="23dp"
+        android:paddingBottom="13dp"
+        android:elevation="10dp"
+        >
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="150dp">
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@null"
+                android:max="100"
+                android:min="0"
+                android:progress="50"
+                android:progressDrawable="@drawable/slider_progress_layer_list"
+                android:rotation="270"
+                android:thumb="@null"
+                android:thumbTint="@color/transparent"
+                android:paddingVertical="23dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"/>
+        </FrameLayout>
+
+        <View
+            android:layout_gravity="center"
+            android:id="@+id/divider"
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:background="@drawable/slider_progress_container"
+            android:backgroundTint="@color/text_color"
+            android:layout_marginTop ="16dp"
+            android:layout_marginBottom="12dp"
+            android:alpha="0.5"/>
+
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_brightness"
+            android:layout_gravity="center"
+            app:tint="@color/text_color" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
